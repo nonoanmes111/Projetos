@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio • Heitor Murat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff; /* azul clarinho */
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #1e3a8a; /* azul escuro */
+      color: white;
+      padding: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #93c5fd; /* azul claro */
+      text-decoration: none;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    section { padding: 20px; }
+    h1, h2 { color: #1e40af; }
+
+    .caixa { /* caixas simples com borda azul */
+      border: 2px solid #3b82f6;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px auto;
+      max-width: 650px;
+      background-color: #ffffff;
+    }
+
+    /* "Desenho" do Sonic em SVG embutido para funcionar offline */
+    .sonic { width: 220px; max-width: 90vw; display: block; margin: 12px auto; }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio de Heitor Murat</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <div class="caixa">
+      <p>Sou Heitor Murat, estudante de Pilar do Sul (SP). Gosto de tecnologia, programação e também do Sonic!</p>
+      <!-- Ilustração simples do Sonic (SVG embutido) -->
+      <svg class="sonic" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="tit1 desc1">
+        <title id="tit1">Sonic correndo (desenho simples)</title>
+        <desc id="desc1">Ilustração estilizada de um ouriço azul com tênis vermelhos correndo.</desc>
+        <!-- corpo principal -->
+        <ellipse cx="115" cy="70" rx="50" ry="35" fill="#1e40af"/>
+        <!-- cabeça -->
+        <circle cx="70" cy="60" r="28" fill="#1d4ed8"/>
+        <!-- bochecha/face -->
+        <ellipse cx="80" cy="66" rx="16" ry="12" fill="#f1c27d"/>
+        <!-- spikes -->
+        <polygon points="88,48 118,36 98,62" fill="#1e3a8a"/>
+        <polygon points="92,62 128,52 102,78" fill="#1e3a8a"/>
+        <polygon points="90,74 124,70 104,90" fill="#1e3a8a"/>
+        <!-- olho -->
+        <ellipse cx="72" cy="55" rx="9" ry="7" fill="#ffffff"/>
+        <circle cx="74" cy="56" r="3" fill="#111827"/>
+        <!-- nariz -->
+        <circle cx="60" cy="64" r="3" fill="#111827"/>
+        <!-- braços -->
+        <rect x="110" y="82" width="28" height="6" rx="3" fill="#1d4ed8"/>
+        <rect x="95" y="86" width="26" height="6" rx="3" fill="#1d4ed8"/>
+        <!-- luvas -->
+        <circle cx="140" cy="85" r="7" fill="#ffffff" stroke="#1f2937" stroke-width="1"/>
+        <circle cx="118" cy="89" r="7" fill="#ffffff" stroke="#1f2937" stroke-width="1"/>
+        <!-- pernas -->
+        <rect x="120" y="104" width="10" height="22" rx="3" fill="#1d4ed8"/>
+        <rect x="98" y="106" width="10" height="22" rx="3" fill="#1d4ed8"/>
+        <!-- tênis -->
+        <rect x="114" y="124" width="22" height="10" rx="2" fill="#ef4444"/>
+        <rect x="92" y="126" width="22" height="10" rx="2" fill="#ef4444"/>
+        <rect x="114" y="124" width="22" height="3" fill="#ffffff"/>
+        <rect x="92" y="126" width="22" height="3" fill="#ffffff"/>
+        <!-- linhas de movimento -->
+        <line x1="20" y1="110" x2="60" y2="110" stroke="#60a5fa" stroke-width="3"/>
+        <line x1="20" y1="120" x2="50" y2="120" stroke="#60a5fa" stroke-width="3"/>
+        <line x1="20" y1="100" x2="55" y2="100" stroke="#60a5fa" stroke-width="3"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="caixa">
+      <h3>Projeto 1: Site simples em HTML</h3>
+      <p>Meu primeiro site com HTML e CSS. Aprendi a usar cores e links.</p>
+      <!-- Reaproveitando a mesma ilustração -->
+      <svg class="sonic" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" aria-label="Sonic correndo (desenho)">
+        <ellipse cx="115" cy="70" rx="50" ry="35" fill="#1e40af"/>
+        <circle cx="70" cy="60" r="28" fill="#1d4ed8"/>
+        <ellipse cx="80" cy="66" rx="16" ry="12" fill="#f1c27d"/>
+        <polygon points="88,48 118,36 98,62" fill="#1e3a8a"/>
+        <polygon points="92,62 128,52 102,78" fill="#1e3a8a"/>
+        <polygon points="90,74 124,70 104,90" fill="#1e3a8a"/>
+        <ellipse cx="72" cy="55" rx="9" ry="7" fill="#ffffff"/>
+        <circle cx="74" cy="56" r="3" fill="#111827"/>
+        <circle cx="60" cy="64" r="3" fill="#111827"/>
+        <rect x="110" y="82" width="28" height="6" rx="3" fill="#1d4ed8"/>
+        <rect x="95" y="86" width="26" height="6" rx="3" fill="#1d4ed8"/>
+        <circle cx="140" cy="85" r="7" fill="#ffffff" stroke="#1f2937" stroke-width="1"/>
+        <circle cx="118" cy="89" r="7" fill="#ffffff" stroke="#1f2937" stroke-width="1"/>
+        <rect x="120" y="104" width="10" height="22" rx="3" fill="#1d4ed8"/>
+        <rect x="98" y="106" width="10" height="22" rx="3" fill="#1d4ed8"/>
+        <rect x="114" y="124" width="22" height="10" rx="2" fill="#ef4444"/>
+        <rect x="92" y="126" width="22" height="10" rx="2" fill="#ef4444"/>
+        <rect x="114" y="124" width="22" height="3" fill="#ffffff"/>
+        <rect x="92" y="126" width="22" height="3" fill="#ffffff"/>
+        <line x1="20" y1="110" x2="60" y2="110" stroke="#60a5fa" stroke-width="3"/>
+        <line x1="20" y1="120" x2="50" y2="120" stroke="#60a5fa" stroke-width="3"/>
+        <line x1="20" y1="100" x2="55" y2="100" stroke="#60a5fa" stroke-width="3"/>
+      </svg>
+    </div>
+
+    <div class="caixa">
+      <h3>Projeto 2: Página sobre games</h3>
+      <p>Criei uma página para falar sobre meus jogos favoritos, incluindo Sonic.</p>
+      <!-- Segunda ilustração com leve variação (tamanho e posição) -->
+      <svg class="sonic" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" aria-label="Sonic posando (desenho)">
+        <ellipse cx="110" cy="75" rx="48" ry="33" fill="#1e40af"/>
+        <circle cx="70" cy="62" r="28" fill="#1d4ed8"/>
+        <ellipse cx="80" cy="68" rx="16" ry="12" fill="#f1c27d"/>
+        <polygon points="88,50 118,38 98,64" fill="#1e3a8a"/>
+        <polygon points="92,64 128,54 102,80" fill="#1e3a8a"/>
+        <ellipse cx="72" cy="57" rx="9" ry="7" fill="#ffffff"/>
+        <circle cx="74" cy="58" r="3" fill="#111827"/>
+        <circle cx="60" cy="66" r="3" fill="#111827"/>
+        <rect x="106" y="86" width="26" height="6" rx="3" fill="#1d4ed8"/>
+        <rect x="90" y="90" width="24" height="6" rx="3" fill="#1d4ed8"/>
+        <circle cx="134" cy="89" r="7" fill="#ffffff" stroke="#1f2937" stroke-width="1"/>
+        <circle cx="112" cy="93" r="7" fill="#ffffff" stroke="#1f2937" stroke-width="1"/>
+        <rect x="118" y="106" width="10" height="22" rx="3" fill="#1d4ed8"/>
+        <rect x="96" y="108" width="10" height="22" rx="3" fill="#1d4ed8"/>
+        <rect x="112" y="126" width="22" height="10" rx="2" fill="#ef4444"/>
+        <rect x="90" y="128" width="22" height="10" rx="2" fill="#ef4444"/>
+        <rect x="112" y="126" width="22" height="3" fill="#ffffff"/>
+        <rect x="90" y="128" width="22" height="3" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="caixa">
+      <p>Email: heitor.murat@etec.ps.gov.br</p>
+      <p>Instagram: @heitor.murat</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Heitor Murat - Pilar do Sul</p>
+  </footer>
+</body>
+</html>
